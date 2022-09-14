@@ -34,3 +34,18 @@ main {
   justify-content: flex-end;
   
 }
+
+#radio-container {
+  display: flex;
+  gap: 10px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#text-area {
+  resize: none;
+  height: 110px;
+}

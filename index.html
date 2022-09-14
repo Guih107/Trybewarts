@@ -23,13 +23,13 @@
   </header>
   <main>
     <form action="" id="evaluation-form">
-      <label for="nome">
+      <label for="input-name">
         <input type="text" placeholder="Nome" name="nome" id="input-name">
       </label>
-      <label for="sobrenome">
+      <label for="input-lastname">
         <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
       </label>
-      <label for="email">
+      <label for="input-email">
         <input type="email" placeholder="Email" name="email" id="input-email">
       </label>
       <label for="house">Casa:
@@ -39,6 +39,68 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+      <label id="label-content">
+        Qual conteúdo você está com mais vontade de aprender?
+      </label>
+      <label for="hofs-cb">
+        <input type="checkbox" name="HoFs" value="HoFs" id="hofs-cb" class="subject">HoFs
+      </label>
+      <label for="jest-cb">
+        <input type="checkbox" name="Jest" value="Jest" id="jest-cb" class="subject">Jest
+      </label>
+      <label for="promises-cb">
+        <input type="checkbox" name="Promises" value="Promises" id="promises-cb" class="subject">Promises
+      </label>
+      <label for="react-cb">
+        <input type="checkbox" name="React" value="React" id="react-cb" class="subject">React
+      </label>
+      <label for="sql-cb">
+        <input type="checkbox" name="SQL" value="SQL" id="sql-cb" class="subject">SQL
+      </label>
+      <label for="python-cb">
+        <input type="checkbox" name="Python" value="Python" id="python-cb" class="subject">Python
+      </label>
+      <label id="label-rate">
+        Como você avalia a Trybewarts?
+      </label>
+      <div id="radio-container">
+        <label for="rate-1">
+          <input type="radio" name="rate" id="rate-1">1
+        </label>
+        <label for="rate-2">
+          <input type="radio" name="rate" id="rate-2">2
+        </label>
+        <label for="rate-3">
+          <input type="radio" name="rate" id="rate-3">3
+        </label>
+        <label for="rate-4">
+          <input type="radio" name="rate" id="rate-4">4
+        </label>
+        <label for="rate-5">
+          <input type="radio" name="rate" id="rate-5">5
+        </label>
+        <label for="rate-6">
+          <input type="radio" name="rate" id="rate-6">6
+        </label>
+        <label for="rate-7">
+          <input type="radio" name="rate" id="rate-7">7
+        </label>
+        <label for="rate-8">
+          <input type="radio" name="rate" id="rate-8">8
+        </label>
+        <label for="rate-9">
+          <input type="radio" name="rate" id="rate-9">9
+        </label>
+        <label for="rate-10">
+          <input type="radio" name="rate" id="rate-10">10
+        </label>
+      </div>
+      <label for="text-area" class="textarea">Deixe seu comentário:
+        <textarea name="textarea" maxlength="500" id="text-area"></textarea>
+      </label>
+      <label for="agreement" id="label-infos">
+        <input type="checkbox" name="agreement" id="agreement">Você concorda com o uso das informações acima?
+
       </label>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Logo da Escola Trybewarts" id="trybewarts-forms-logo">
