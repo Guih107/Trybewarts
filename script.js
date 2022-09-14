@@ -1,17 +1,17 @@
 
-const form = document.getElementsByClassName('trybewarts-login');
+const form = document.getElementsByClassName('trybewarts-login')[0];
 const clickButton = document.getElementById('button');
-
-clickButton.addEventListener('click', loginValidation);
-function loginValidation (email, senha){
+const inputEmail = document.getElementById('email');
+const inputPassword = document.getElementById('password');
+function loginValidation (){
   const loginEmail = 'tryber@teste.com';
-  const loginSenha = 123456
-
-  if (email === loginEmail && senha === loginSenha){
+  const loginPassword = '123456'
+  
+  if (loginEmail === inputEmail.value && loginPassword === inputPassword.value){
     window.alert('Olá, Tryber!');
   }else {
     window.alert('Email ou senha inválidos');
   }
 }
-loginValidation();
+clickButton.addEventListener('click', loginValidation);
 
