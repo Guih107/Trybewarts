@@ -1,4 +1,3 @@
-
 const form = document.getElementsByClassName('trybewarts-login');
 const clickButton = document.getElementById('button');
 
@@ -14,4 +13,3 @@ function loginValidation (email, senha){
   }
 }
 loginValidation();
-
