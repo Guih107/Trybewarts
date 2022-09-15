@@ -45,11 +45,20 @@ main {
   flex-direction: column;
 }
 
-#text-area {
+#textarea {
   resize: none;
   height: 110px;
 }
 
+#counter-label {
+  float: right;
+}
+
 .image-container {
   display: flex;
+}
+
+#form-data {
+  display: none;
+  width: 675px;
 }

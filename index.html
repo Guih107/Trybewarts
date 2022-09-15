@@ -23,8 +23,6 @@
       </form>
     </div>
   </header>
-
-  
   <main>
     <form action="" id="evaluation-form">
       <div>
@@ -35,7 +33,6 @@
           <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
         </label>
       </div>
-      
       <div>
         <label for="input-email">
           <input type="email" placeholder="Email" name="email" id="input-email">
@@ -49,7 +46,6 @@
           </select>
         </label>
       </div>  
-
       <div>
         <div> 
          <label for="" id="label-family">Qual sua família?</label>
@@ -66,7 +62,6 @@
             </label>
           </div>
         </div>
-
         <div>
           <label id="label-content">
             Qual conteúdo você está com mais vontade de aprender?
@@ -94,65 +89,51 @@
           </div>
         </div>
       </div>
-
       <div>
         <label id="label-rate">
           Como você avalia a Trybewarts?
         </label>
-          <label for="rate-1">
-            <input type="radio" name="rate" id="rate-1">1
-          </label>
-          <label for="rate-2">
-            <input type="radio" name="rate" id="rate-2">2
-          </label>
-          <label for="rate-3">
-            <input type="radio" name="rate" id="rate-3">3
-          </label>
-          <label for="rate-4">
-            <input type="radio" name="rate" id="rate-4">4
-          </label>
-          <label for="rate-5">
-            <input type="radio" name="rate" id="rate-5">5
-          </label>
-          <label for="rate-6">
-            <input type="radio" name="rate" id="rate-6">6
-          </label>
-          <label for="rate-7">
-            <input type="radio" name="rate" id="rate-7">7
-          </label>
-          <label for="rate-8">
-            <input type="radio" name="rate" id="rate-8">8
-          </label>
-          <label for="rate-9">
-            <input type="radio" name="rate" id="rate-9">9
-          </label>
-          <label for="rate-10">
-            <input type="radio" name="rate" id="rate-10">10
-          </label>
-        </div>
-
-        <div>
-          <label for="text-area" class="textarea">Deixe seu comentário:
-            <textarea name="textarea" maxlength="500" id="text-area"></textarea>
-          </label>
+        <label for="rate-1"><input type="radio" name="rate" value="1" id="rate-1">1</label>
+        <label for="rate-2"><input type="radio" name="rate" value="2" id="rate-2">2</label>
+        <label for="rate-3"><input type="radio" name="rate" value="3" id="rate-3">3</label>
+        <label for="rate-4"><input type="radio" name="rate" value="4" id="rate-4">4</label>
+        <label for="rate-5"><input type="radio" name="rate" value="5" id="rate-5">5</label>
+        <label for="rate-6"><input type="radio" name="rate" value="6" id="rate-6">6</label>
+        <label for="rate-7"><input type="radio" name="rate" value="7" id="rate-7">7</label>
+        <label for="rate-8"><input type="radio" name="rate" value="8" id="rate-8">8</label>
+        <label for="rate-9"><input type="radio" name="rate" value="9" id="rate-9">9</label>
+        <label for="rate-10"><input type="radio" name="rate" value="10" id="rate-10">10</label>
       </div>
-
       <div>
-      <label for="agreement" id="label-infos">
-        <input type="checkbox" name="agreement" id="agreement" required>Você concorda com o uso das informações acima?
-      </label>
+        <label for="textarea" class="textarea">Deixe seu comentário:
+          <textarea name="textarea" maxlength="500" id="textarea"></textarea>
+        </label>
+        <label for="counter" id="counter-label">Caracteres restantes: 
+          <span id="counter">500</span>
+        </label>
       </div>
-
       <div>
-          <button type="submit" id="submit-btn" disabled>Enviar</button>
+        <label for="agreement" id="label-infos">
+          <input type="checkbox" name="agreement" id="agreement" required>Você concorda com o uso das informações acima?
+        </label>
+      </div>
+      <div>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
       </div>
     </form>
-    
+    <div id="form-data">
+      <p>Nome: <span id="name-info"></span></p>
+      <p>Email: <span id="email-info"></span></p>
+      <p>Casa: <span id="house-info"></span></p>
+      <p>Família: <span id="family-info"></span></p>
+      <p>Matérias: <span id="subjects-info"></span></p>
+      <p>Avaliação: <span id="rate-info"></span></p>
+      <p>Observações: <span id="textarea-info"></span></p>
+    </div>
     <div class="image-container">
       <img src="images/trybewarts-colored.svg" alt="Logo da Escola Trybewarts" id="trybewarts-forms-logo">
     </div>
   </main>
-
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
