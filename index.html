@@ -25,22 +25,24 @@
       </form>
     </div>
   </header>
+ 
   <main>
     <form action="" id="evaluation-form">
-      <div>
+      <div id="name-div">
         <label for="input-name">
-          <input type="text" placeholder="Nome" name="nome" id="input-name">
+          <input type="text" placeholder="Nome" name="nome" id="input-name" class="text-box higth">
         </label>
         <label for="input-lastname">
-          <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
+          <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname" class="text-box">
         </label>
       </div>
+
       <div>
         <label for="input-email">
-          <input type="email" placeholder="Email" name="email" id="input-email">
+          <input type="email" placeholder="Email" name="email" id="input-email" class="text-box">
         </label>
-        <label for="house">Casa:
-          <select name="houses" id="house">
+        <label for="house">
+          <select name="houses" id="house" class="text-box">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -64,6 +66,7 @@
             </label>
           </div>
         </div>
+
         <div>
           <label id="label-content">
             Qual conteúdo você está com mais vontade de aprender?
@@ -108,7 +111,7 @@
       </div>
       <div>
         <label for="textarea" class="textarea">Deixe seu comentário:
-          <textarea name="textarea" maxlength="500" id="textarea"></textarea>
+          <textarea name="textarea" maxlength="500" id="textarea" class="text-box"></textarea>
         </label>
         <label for="counter" id="counter-label">Caracteres restantes: 
           <span id="counter">500</span>
