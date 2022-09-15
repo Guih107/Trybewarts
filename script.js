@@ -1,7 +1,8 @@
-// const form = document.getElementsByClassName('trybewarts-login')[0];
 const clickButton = document.getElementById('button');
 const inputEmail = document.getElementById('email');
 const inputPassword = document.getElementById('password');
+const agreementCheck = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
 
 function loginValidation() {
   const loginEmail = 'tryber@teste.com';
@@ -15,3 +16,13 @@ function loginValidation() {
 }
 
 clickButton.addEventListener('click', loginValidation);
+
+function agreement() {
+  if (agreementCheck.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+
+agreementCheck.addEventListener('click', agreement);
