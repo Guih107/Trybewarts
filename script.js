@@ -15,5 +15,3 @@ function loginValidation() {
 }
 
 clickButton.addEventListener('click', loginValidation);
-
-
