@@ -11,27 +11,35 @@
   <header class="header">
   <img src="images/trybewarts-header-logo.svg" alt="logo-trybewarts" class="trybewarts-header-logo">
   <h1 id="trybewarts-header-title">Trybewarts</h1>
-  <form action="" class="trybewarts-login">
-    <label for="">Email:
-      <input type="email" name="email" placeholder="Email" id="email">
-    </label>
-    <label for="">Senha:
-      <input type="password" name="password" placeholder="Senha" id="password">
-    </label>
-    <button id="button">Entrar</button>
-  </form>
+  <div>
+    <form action="" class="trybewarts-login">
+      <label for="">Email:
+        <input type="email" name="email" placeholder="Email" id="email">
+      </label>
+      <label for="">Senha:
+        <input type="password" name="password" placeholder="Senha" id="password">
+      </label>
+      <button id="button">Entrar</button>
+    </form>
+  </div>
   </header>
+
+  
   <main>
     <form action="" id="evaluation-form">
+      <div>
       <label for="input-name">
         <input type="text" placeholder="Nome" name="nome" id="input-name">
       </label>
       <label for="input-lastname">
         <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
       </label>
-      <label for="input-email">
-        <input type="email" placeholder="Email" name="email" id="input-email">
-      </label>
+      </div>
+      
+      <div>
+        <label for="input-email">
+          <input type="email" placeholder="Email" name="email" id="input-email">
+        </label>
       <label for="house">Casa:
         <select name="houses" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -39,9 +47,31 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+      </div>  
+
+      <div>
+      <div> 
+         <label for="" id="label-family"> Qual sua família?</label>
+          <br>
+          <div class="family-container">
+          <label for="front">
+            <input type="radio" name="family" value="Frontend" id="front">Frontend
+          </label>
+          <label for="back">
+            <input type="radio" name="family" value="Backend" id="back">Backend
+          </label>
+          <label for="full">
+            <input type="radio" name="family" value="FullStack" id="full">FullStack
+         </label>
+         </div>
+        </div>
+
+        <div>
       <label id="label-content">
         Qual conteúdo você está com mais vontade de aprender?
       </label>
+      <br>
+      <div class="family-container">
       <label for="hofs-cb">
         <input type="checkbox" name="HoFs" value="HoFs" id="hofs-cb" class="subject">HoFs
       </label>
@@ -60,50 +90,62 @@
       <label for="python-cb">
         <input type="checkbox" name="Python" value="Python" id="python-cb" class="subject">Python
       </label>
-      <label id="label-rate">
-        Como você avalia a Trybewarts?
-      </label>
-      <div id="radio-container">
-        <label for="rate-1">
-          <input type="radio" name="rate" id="rate-1">1
-        </label>
-        <label for="rate-2">
-          <input type="radio" name="rate" id="rate-2">2
-        </label>
-        <label for="rate-3">
-          <input type="radio" name="rate" id="rate-3">3
-        </label>
-        <label for="rate-4">
-          <input type="radio" name="rate" id="rate-4">4
-        </label>
-        <label for="rate-5">
-          <input type="radio" name="rate" id="rate-5">5
-        </label>
-        <label for="rate-6">
-          <input type="radio" name="rate" id="rate-6">6
-        </label>
-        <label for="rate-7">
-          <input type="radio" name="rate" id="rate-7">7
-        </label>
-        <label for="rate-8">
-          <input type="radio" name="rate" id="rate-8">8
-        </label>
-        <label for="rate-9">
-          <input type="radio" name="rate" id="rate-9">9
-        </label>
-        <label for="rate-10">
-          <input type="radio" name="rate" id="rate-10">10
-        </label>
       </div>
-      <label for="text-area" class="textarea">Deixe seu comentário:
-        <textarea name="textarea" maxlength="500" id="text-area"></textarea>
-      </label>
+      </div>
+      </div>
+
+      <div>
+        <label id="label-rate">
+          Como você avalia a Trybewarts?
+        </label>
+          <label for="rate-1">
+            <input type="radio" name="rate" id="rate-1">1
+          </label>
+          <label for="rate-2">
+            <input type="radio" name="rate" id="rate-2">2
+          </label>
+          <label for="rate-3">
+            <input type="radio" name="rate" id="rate-3">3
+          </label>
+          <label for="rate-4">
+            <input type="radio" name="rate" id="rate-4">4
+          </label>
+          <label for="rate-5">
+            <input type="radio" name="rate" id="rate-5">5
+          </label>
+          <label for="rate-6">
+            <input type="radio" name="rate" id="rate-6">6
+          </label>
+          <label for="rate-7">
+            <input type="radio" name="rate" id="rate-7">7
+          </label>
+          <label for="rate-8">
+            <input type="radio" name="rate" id="rate-8">8
+          </label>
+          <label for="rate-9">
+            <input type="radio" name="rate" id="rate-9">9
+          </label>
+          <label for="rate-10">
+            <input type="radio" name="rate" id="rate-10">10
+          </label>
+        </div>
+
+        <div>
+          <label for="text-area" class="textarea">Deixe seu comentário:
+            <textarea name="textarea" maxlength="500" id="text-area"></textarea>
+          </label>
+      </div>
+
+      <div>
       <label for="agreement" id="label-infos">
         <input type="checkbox" name="agreement" id="agreement">Você concorda com o uso das informações acima?
-
       </label>
+      </div>
     </form>
-    <img src="images/trybewarts-colored.svg" alt="Logo da Escola Trybewarts" id="trybewarts-forms-logo">
+    
+    <div class="image-container">
+      <img src="images/trybewarts-colored.svg" alt="Logo da Escola Trybewarts" id="trybewarts-forms-logo">
+    </div>
   </main>
   <script src="script.js"></script>
 </body>

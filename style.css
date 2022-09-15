@@ -1,18 +1,13 @@
 header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  /* border: 3px solid black; */
   height: 70px;
   justify-content: center;
   justify-content: space-between;
   color: white;
 }
 
-
-
-
 form {
-  border: 3px solid red;
   display: flex;
   
 }
@@ -20,10 +15,18 @@ form {
 main {
   border: 3px solid blue;
   display: flex;
+
 }
 
+.family-container {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+
 #evaluation-form {
-  
+  border: 3px solid red;
   flex-direction: column;
   width: 675px;
 }
@@ -48,4 +51,8 @@ main {
 #text-area {
   resize: none;
   height: 110px;
+}
+
+.image-container {
+  display: flex;
 }
