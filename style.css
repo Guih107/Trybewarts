@@ -14,7 +14,6 @@ header {
   justify-content: space-between;
   color: white;
   padding: 10px;
-  
 }
 
 .trybewarts-login {
@@ -57,19 +56,15 @@ form {
 }
 
 main {
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-
 }
 
 .family-container {
-  /* border: 3px solid black; */
   display: flex;
   flex-direction: column;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
 }
 
 
@@ -79,7 +74,6 @@ main {
 }
 
 #trybewarts-forms-logo {
-  /* border: 3px solid black; */
   height: 500px;
   justify-content: flex-end;
 }
@@ -123,7 +117,7 @@ main {
   display: flex;
 }
 
-.text-box{
+.text-box {
   height: 30px;
   border-radius: 15px;
   padding-left: 10px;
@@ -146,10 +140,9 @@ label {
   margin: 3px;
 }
 
-#label-family, #label-content, #label-rate, #text-coment {
+#label-family , #label-content , #label-rate , #text-coment {
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
-  margin: 5px 0; 
+  margin: 5px 0;
 }
-
