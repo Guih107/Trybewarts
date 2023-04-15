@@ -23,7 +23,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   font-family: monospace;
-}
+} 
 
 #email {
   height: 30px;
@@ -152,4 +152,3 @@ label {
   font-weight: 600;
   margin: 5px 0; 
 }
-
